@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The First Season</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #fa7c00; /* warmes Orange, dezent */
+      --background: #fafafa;
+      --text-primary: #111;
+      --text-secondary: #555;
+      --box-bg: #fff;
+      --box-shadow: rgba(0,0,0,0.08);
+    }
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      color: var(--text-primary);
+    }
+
+    body {
+      background: var(--background);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    header {
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+
+    header img.logo {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    header p {
+      font-weight: 300;
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+    }
+
+    nav {
+      margin: 0 auto 80px;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: color 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 600px;
+      margin: 0 auto 80px;
+      background: var(--box-bg);
+      padding: 40px 32px;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px var(--box-shadow);
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 28px;
+      position: relative;
+      display: inline-block;
+      padding: 12px 36px;
+      border-radius: 40px;
+      background: rgba(250,124,0,0.1);
+      color: var(--accent);
+      user-select: none;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    ul.tour-list {
+      list-style: none;
+      padding-left: 0;
+      color: var(--text-secondary);
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    ul.tour-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      object-fit: cover;
+      height: 150px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      font-weight: 300;
+      resize: vertical;
+      width: 100%;
+      background: white;
+      transition: border-color 0.2s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 14px;
+      padding: 15px 0;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.25s ease;
+      margin-top: 8px;
+    }
+
+    button:hover {
+      background: #e66c00;
+    }
+
+    .social {
+      margin-top: 24px;
+    }
+
+    .social a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 600px;
+      margin: 40px auto 0;
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        padding: 10px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Bandlogo The First Season" class="logo" />
+    <h1>The First Season</h1>
+    <p>Alternative Rock mit Vision</p>
+  </header>
+
+  <nav>
+    <a href="#band">Über uns</a>
+    <a href="#auftritte">Auftritte</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="band">
+    <h2>Wer wir sind</h2>
+    <p>Wir sind „The First Season“, eine junge Rockband mit dem Ziel, Emotionen in Musik zu verwandeln. Unsere Songs sind ehrlich, roh und voller Energie – auch wenn sie noch nicht veröffentlicht sind, arbeiten wir leidenschaftlich daran.</p>
+    <p>Unsere Mission: Live-Momente schaffen, die man nicht vergisst. Kein Bullshit, kein Kommerz – nur Musik, die knallt und berührt.</p>
+    <p><strong>Bandmitglieder:</strong> Nils Hohenberger (Drums), Johannes Gutensohn (Gitarre), Diana & Lisa (Gesang), Mara (Bass)</p>
+  </section>
+
+  <section id="auftritte">
+    <h2>Wo wir auftreten</h2>
+    <ul class="tour-list">
+      <li>📍 12.09.2025 – Proberaum Session (Hamburg)</li>
+      <li>📍 24.09.2025 – Bandcontest Local Heroes</li>
+      <li>📍 Bald: Open-Air Support-Gig (TBA)</li>
+    </ul>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Live 1" />
+      <img src="gallery2.jpg" alt="Live 2" />
+      <img src="gallery3.jpg" alt="Studio" />
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt & Booking</h2>
+    <p>Du willst uns buchen oder mehr erfahren? Schreib uns einfach eine Mail an:</p>
+    <p><a href="mailto:thefirstseason.contact@gmail.com" style="color: var(--accent); text-decoration:none; font-weight:600;">thefirstseason.contact@gmail.com</a></p>
+    <p>Oder nutze das Formular:</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Dein Name" required />
+      <input type="email" name="_replyto" placeholder="Deine E-Mail" required />
+      <textarea name="message" rows="5" placeholder="Deine Nachricht" required></textarea>
+      <button type="submit">Senden</button>
+    </form>
+
+    <div class="social">
+      <a href="https://www.instagram.com/the.first_season" target="_blank" rel="noopener noreferrer">
+        📸 Folge uns auf Instagram
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 The First Season · Musik mit Seele
+  </footer>
+
+</body>
+</html>
